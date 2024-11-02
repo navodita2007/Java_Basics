@@ -1,0 +1,60 @@
+29/10/2024
+Reading from keyboard
+-----------------------
+Java provides class called scanner which reads the data from different sources. Keyboard is one of the sources.
+There are built in packages in Java. util is a kind of package. scanner class is present in util or utility package.
+list of methods present in scanner class -:
+nextInt()
+nextFloat()
+nextDouble()
+next()
+nextLine()
+nextByte()
+nextShort()
+nextLong()
+nextBoolean()
+
+hasNextInt()
+hasNextFloat()
+
+
+
+//Reading from keyboard
+// adding two integers
+
+import java.lang.*;
+import java.util.*;
+
+class keyboard
+{
+	public static void main(string args[])
+	{
+		Scanner s=new Scanner(System.in);  // We have created an object in this line where Scanner is class name, Scanner() is constructer, s is reference. System.in(which is assigned) is for keyboard
+		int a,b,c;
+		System.out.println("Enter 2 nos");
+		a = s.nextInt();
+		b = s.nextInt();
+		c = a+b;
+		System.out.println("sum is" + c);
+	}
+}  	
+
+
+
+//Diffesrent program
+// taking string (name of person)as data and printing welcome message
+
+import java.lang.*;
+import java.util.*;
+
+class keyboard
+{
+	public static void main(string args[])
+	{
+		Scanner s=new Scanner (System.in);
+		String name;
+		System.out.println("May I know your name");
+		name=S.nextLine();  // s is object of scanner and from s we are reading the string.
+		System.out.println("Welcome Mr./Miss" + name);
+	}
+}
